@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  body {
+    font: 1.2em/1.2 Helvetica, aria, sans-serif;
+    margin: 0 3%;
+    
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    margin: .9em 0 0 0;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin: 1.5em 0 0 0;
+  }
+  
+  img {
+    max-width: 100%;
+    min-width: 100%; 
+  }
+/* filter (effect) params HERE 👇🏾*/ 
+ 
+  
+  figure {
+    border: 5px black solid; 
+    border-radius: 5px;
+    color: white;
+    margin: 0 0 25px 0;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  figcaption {
+    font-size: .8em;
+  }
+
+  #one{
+    filter:blur(20px);
+  }
+
+  #two{
+    filter:brightness(200%);
+  }
+
+  #three{
+    filter:saturate(2);
+  }
+
+  #four{
+    filter:invert(1);
+  }
+
+  #five{
+    filter:contrast(2);
+  }
+
+  #six{
+    
+    filter: drop-shadow(cyan 20px 30px 10px);
+  }
+
+  .nav{
+    float: left;
+    height: 50px;
+    line-height:50px;
+  }
+
+  .menu{
+    margin: 0 30px 0 0;
+    display: inline;
+  }
+
+  .menu a{
+    text-decoration: none;
+    color: purple;
+    line-height:50px;
+    margin-right: 15px;
+    
+  }
+
+  label{
+    font-size:20px;
+    line-height: 50px;
+    display: none;
+  }
+
+  #toggle{
+    display: none;
+  }
+  
+/* Look up a media query property */
+
+@media screen and (max-width:480px) and (min-width:320px){
+  body{
+    background-color:lightskyblue;
+    margin: 25px 8%;
+  }
+
+  figure{
+    float: left;
+    width: 20%;
+    margin-right: 4.5%;}
+
+    label{
+      display: block;
+    }
+  
+ .menu{
+    text-align: left;
+    width:100%;
+    display:none;
+    
+  }
+
+  .menu a{
+    display:block;
+    margin: 0;
+    
+  }
+
+  #toggle:checked + .menu{
+    display: block;
+    background-color: white;
+    width: 100px;
+    position: absolute;
+  }
+
+}
+
+@media screen and (max-width:768px) and (min-width:481px){
+  body{
+    background-color: darkseagreen;
+    margin: 25px 8%;
+  }
+
+  figure{
+    float: left;
+    width: 20%;
+    margin-right: 4.5%;
+  }
+}
+
+
+
+@media screen and (max-width:1024px) and (min-width:769px){
+  body{
+    background-color: rgb(196, 124, 231);
+    margin: 25px 10%;
+
+  }
+
+  figure{
+    width: 30%;
+    margin-right: 2.5%;
+  }
+}
