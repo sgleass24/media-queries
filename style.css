@@ -102,6 +102,13 @@ html {
 @media screen and (max-width:480px) and (min-width:320px){
   body{
     background-color:lightskyblue;
+    background-image: url("images/treees.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box;
+    
     margin: 25px 8%;
   }
 
@@ -139,7 +146,15 @@ html {
 @media screen and (max-width:768px) and (min-width:481px){
   body{
     background-color: darkseagreen;
+    background-image: url("images/ocean.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box;
+    
     margin: 25px 8%;
+
   }
 
   figure{
@@ -147,6 +162,8 @@ html {
     width: 20%;
     margin-right: 4.5%;
   }
+
+  
 }
 
 
@@ -154,6 +171,13 @@ html {
 @media screen and (max-width:1024px) and (min-width:769px){
   body{
     background-color: rgb(196, 124, 231);
+    background-image: url("images/agave.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box;
+    
     margin: 25px 10%;
 
   }
